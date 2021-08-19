@@ -1,0 +1,20 @@
+/* 링크 방식, CSS분리 */
+#index ul{
+  text-align:center;
+}
+#index ul li{
+  display:inline;
+  margin: 0 30px;
+}
+p{
+  /*여백 설정(상/좌우/하)*/
+  margin:10px 50px 50px;
+  width: 90%;
+  line-height: 30px;
+}
+footer{
+  text-align:right;
+}
+footer span{
+  background-color:#FFBA85;
+}
