@@ -1,0 +1,30 @@
+body {
+  margin:0;
+}
+
+.menu-bar{
+  display: flex;
+  padding: 0px 12px;
+  background-color: navy;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo i{
+  color: orange;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  display: inline-block;
+  margin: 0px 8px;
+  padding: 10px 8px;
+}
+
+li:hover{
+  background-color:beige;
+}
