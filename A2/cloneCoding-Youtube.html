@@ -10,8 +10,9 @@
     <title>Clone Coding - Youtube</title>
     <script src="https://kit.fontawesome.com/27aaa5eb05.js" crossorigin="anonymous"></script>
   </head>
+
   <body>
-    <!-- Header -->
+    <!-- HEADER -->
     <header>
       <div class="logo">
         <a href="#"><i class="fab fa-youtube"></i>
@@ -25,7 +26,7 @@
     </header>
 
 
-    <!-- Video -->
+    <!-- VIDEO -->
     <section class="player">
       <video src="https://youtu.be/67stn7Pu7s4" controls width=100%>
         이 비디오는 지원하지 않는 형식입니다.
@@ -33,13 +34,82 @@
     </section>
 
 
-    <!-- Information -->
+    <!-- INFORMATION -->
     <section class= "info">
+      <!-- Metadata -->
+      <div class="metadata">
+        <!-- hashtags -->
+        <ul class="hashtags">
+          <li>#CloneCoding</li>
+          <li>#Youtube</li>
+        </ul>
+        <!-- title -->
+        <div class="titleAndButton">
+          <span class="title">영상 제목이 들어갈 곳입니다.</span>
+          <button name="moreBtn">
+            <i class="fas fa-caret-down"></i>
+          </button>
+        </div>
+        <!-- details -->
+        <div class="views">
+          조회수와 업로드 시간이 들어갈 곳입니다.
+        </div>
+      </div>
+
+
+
+      <!-- Actions -->
+      <ul class="actions">
+        <li>
+          <button name="likeBtn"><i class="far fa-thumbs-up"></i>
+            count
+          </button>
+        </li>
+        <li><button name="hateBtn"><i class="far fa-thumbs-down"></i>
+            count
+          </button>
+        </li>
+        <li><button name="shareBtn"><i class="fas fa-share"></i>
+            공유
+          </button>
+        </li>
+        <li><button name="saveBtn"><i class="fas fa-plus"></i>
+            재생목록에 추가
+          </button>
+        </li>
+        <li><button name="reportBtn"><i class="fas fa-flag"></i>
+            보고
+          </button>
+        </li>
+      </ul>
+
+
+      <!-- Channel -->
+      <div class="channel">
+        <div class="info">
+          <span><i class="fas fa-user-circle"></i></span>
+          <div class="metadata">
+            <span class="name"> 채널명 </span>
+            <span class="subscribers"> 구독자수 </span>
+          </div>
+        </div>
+        <button name="subscribeBtn"><i class="fab fa-youtube"></i></button>
+      </div>
     </section>
 
 
-    <!-- Next Video -->
+    <!-- NEXT VIDEO -->
     <section class= "UpNext">
+      <span class= "title"> 다음 동영상 </span>
+      <ul class="playlist">
+        <li>
+          <div class="items">
+            이미지
+            <div class>
+          </div>
+        </li>
+
+      </ul>
     </section>
   </body>
 </html>
