@@ -20,14 +20,14 @@ a{
   color: orange;
 }
 
-.menu-bar ul{
-  list-style: none;
-}
-
 .menu-bar li{
   display: inline-block;
   margin: 0px 8px;
   padding: 10px 8px;
+}
+
+.external-link {
+  display: flex;
 }
 
 .menu-bar li:hover{
