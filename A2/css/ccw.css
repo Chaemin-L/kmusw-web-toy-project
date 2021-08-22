@@ -1,5 +1,6 @@
 body {
   margin:0;
+  background-color: lightgray;
 }
 
 a{
@@ -42,17 +43,13 @@ a{
 }
 
 .menu-bar li:hover{
-  background-color:beige;
+  background-color: lightblue;
   border-radius: 4px;
 }
 
 /*가로로 넓을 땐, 안 보이도록*/
-.toogleBtn{
+.toggleBtn{
   display: none;
-  position: absolute;
-  right: 32px;
-  font-size: 24px
-  color: orange;
 }
 
 /*창의 가로 크기에 따라 헤더의 스타일이 바뀌도록*/
@@ -65,12 +62,14 @@ a{
   }
 
   .menu-items{
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
 
   .external-link{
+    display: none;
     margin:0;
     padding-left: 0;
     width: 100%;
@@ -82,9 +81,17 @@ a{
     text-align:center;
   }
 
-
   /* 아이콘 클릭시 메뉴 목록이 펼쳐지도록*/
-  .toogleBtn{
+  .toggleBtn{
     display: block;
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    color: orange;
+  }
+
+  .menu-items.active,
+  .external-link.active{
+    display: flex;
   }
 }
