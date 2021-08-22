@@ -2,6 +2,10 @@ body {
   margin:0;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
 .menu-bar{
   display: flex;
   padding: 0px 12px;
@@ -12,19 +16,21 @@ body {
 }
 
 .logo i{
+  font-size: 24px;
   color: orange;
 }
 
-ul{
+.menu-bar ul{
   list-style: none;
 }
 
-li{
+.menu-bar li{
   display: inline-block;
   margin: 0px 8px;
   padding: 10px 8px;
 }
 
-li:hover{
+.menu-bar li:hover{
   background-color:beige;
+  border-radius: 4px;
 }
