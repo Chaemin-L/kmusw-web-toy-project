@@ -46,6 +46,15 @@ a{
   border-radius: 4px;
 }
 
+/*가로로 넓을 땐, 안 보이도록*/
+.toogleBtn{
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px
+  color: orange;
+}
+
 /*창의 가로 크기에 따라 헤더의 스타일이 바뀌도록*/
 @media screen and (max-width: 768px){
 
@@ -62,6 +71,7 @@ a{
   }
 
   .external-link{
+    margin:0;
     padding-left: 0;
     width: 100%;
     justify-content: center;
@@ -72,4 +82,9 @@ a{
     text-align:center;
   }
 
+
+  /* 아이콘 클릭시 메뉴 목록이 펼쳐지도록*/
+  .toogleBtn{
+    display: block;
+  }
 }
