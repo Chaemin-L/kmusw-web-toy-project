@@ -61,6 +61,27 @@ header{
   border:0;
   background-color:white;
 }
+.actions{
+  display: flex;
+  padding-left:0;
+  list-style:none;
+  text-align:center;
+}
+.actions li{
+  display: inline;
+  width:25%;
+  margin: 10px 20px;
+}
+.actions button{
+  border:0;
+  background-color:white;
+  font-size:20px;
+}
+.actions span{
+  display: block;
+  padding-top:8px;
+  font-size: 15px;
+}
 
 
 /*views 공통 속성*/
