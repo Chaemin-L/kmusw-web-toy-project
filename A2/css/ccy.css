@@ -34,3 +34,43 @@ header{
   background-color:black;
   font-size: 24px;
 }
+
+
+/*VIDEO*/
+
+
+/*INFORMATION*/
+.info{
+  padding: 0px 12px;
+}
+.hashtags{
+  list-style:none;
+  padding-left: 0;
+  color: darkblue;
+  font-size: 15px;
+}
+.hashtags li{
+  display:inline;
+}
+.titleAndButton{
+  display: flex;
+  align-items:flex-start;
+}
+.titleAndButton button{
+  padding-top:8px;
+  border:0;
+  background-color:white;
+}
+
+
+/*views 공통 속성*/
+.views{
+  color: darkgray;
+  font-size: 15px;
+  line-height: 30px;
+}
+/*title 공통 속성*/
+.title{
+    font-size:20px;
+    line-height: 30px;
+}
