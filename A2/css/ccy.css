@@ -1,0 +1,36 @@
+body{
+  margin:0;
+}
+
+/*HEADER*/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  height: auto;
+  padding: 8px 12px;
+  font-size:24px;
+  background-color:black;
+  color:white;
+
+}
+.logo i{
+  color:red;
+}
+.logo a{
+  text-decoration: none;
+  color:white;
+}
+.icon{
+  list-style:none;
+  padding-left:0;
+}
+.icon li{
+  display: inline;
+}
+.icon button{
+  border:0;
+  color:white;
+  background-color:black;
+  font-size: 24px;
+}
