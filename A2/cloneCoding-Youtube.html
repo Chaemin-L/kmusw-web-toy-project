@@ -9,6 +9,7 @@
     <meta charset="utf-8">
     <title>Clone Coding - Youtube</title>
     <script src="https://kit.fontawesome.com/27aaa5eb05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/ccy.css">
   </head>
 
   <body>
@@ -20,8 +21,8 @@
         </a>
       </div>
       <ul class="icon">
-        <li> <i class="fas fa-search"></i></li>
-        <li> <i class="fas fa-ellipsis-h"></i></li>
+        <li><button type="button" name="search"><i class="fas fa-search"></i></button></li>
+        <li><button type="button" name="moreBtn"><i class="fas fa-ellipsis-h"></i></button></li>
       </ul>
     </header>
 
@@ -32,6 +33,7 @@
         이 비디오는 지원하지 않는 형식입니다.
       </video>
     </section>
+
 
 
     <!-- INFORMATION -->
@@ -45,57 +47,58 @@
         </ul>
         <!-- title -->
         <div class="titleAndButton">
-          <span class="title">영상 제목이 들어갈 곳입니다.</span>
+          <div class="title">영상 제목이 들어갈 곳입니다. 영상 제목은 길수도 있으니 블라블라 써두도록 하겠습니다. 어쩌구저쩌구어쩌구저쩌구 어쩌구저쩌구어쩌구저쩌구 어쩌구저쩌구어쩌구저쩌구 어쩌구저쩌구어쩌구저쩌구
+          </div>
           <button name="moreBtn">
             <i class="fas fa-caret-down"></i>
           </button>
         </div>
         <!-- details -->
         <div class="views">
-          조회수와 업로드 시간이 들어갈 곳입니다.
+          조회수 7.6만회 · 1일 전
         </div>
       </div>
-
-
 
       <!-- Actions -->
       <ul class="actions">
         <li>
           <button name="likeBtn"><i class="far fa-thumbs-up"></i>
-            count
+            <span>1000</span>
           </button>
         </li>
         <li><button name="hateBtn"><i class="far fa-thumbs-down"></i>
-            count
+            <span>32</span>
           </button>
         </li>
         <li><button name="shareBtn"><i class="fas fa-share"></i>
-            공유
+            <span>공유</span>
           </button>
         </li>
         <li><button name="saveBtn"><i class="fas fa-plus"></i>
-            재생목록에 추가
+            <span>저장</span>
           </button>
         </li>
         <li><button name="reportBtn"><i class="fas fa-flag"></i>
-            보고
+            <span>보고</span>
           </button>
         </li>
       </ul>
 
-
       <!-- Channel -->
       <div class="channel">
-        <div class="info">
-          <span><i class="fas fa-user-circle"></i></span>
+        <div class="profile">
+          <a href="#">
+          <img src="avatar.png" alt="프로필 사진">
           <div class="metadata">
             <span class="name"> 채널명 </span>
             <span class="subscribers"> 구독자수 </span>
           </div>
+          </a>
         </div>
         <button name="subscribeBtn"> 구독 </button>
       </div>
     </section>
+
 
 
     <!-- NEXT VIDEO -->
@@ -108,8 +111,8 @@
             이미지1
             <div class=metadata>
               <div class="title"> 영상 제목1 </div>
-              <div class="name"> 채널명1 </div>
-              <div class="subscribers"> 구독자수2 </div>
+              <span class="name"> 채널명1 </span>
+              <span class="views"> 구독자수2 </span>
             </div></a>
             <button name="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
           </div>
@@ -121,7 +124,7 @@
             <div class=metadata>
               <div class="title"> 영상 제목2 </div>
               <div class="name"> 채널명2 </div>
-              <div class="subscribers"> 구독자수2 </div>
+              <div class="views"> 구독자수2 </div>
             </div></a>
             <button name="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
           </div>
@@ -133,7 +136,7 @@
             <div class=metadata>
               <div class="title"> 영상 제목3 </div>
               <div class="name"> 채널명3 </div>
-              <div class="subscribers"> 구독자수3 </div>
+              <div class="views"> 구독자수3 </div>
             </div></a>
             <button name="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
           </div>
