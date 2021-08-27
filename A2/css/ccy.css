@@ -1,38 +1,57 @@
-body{
-  margin:0;
+:root{
+  /* Color */
+  --white-color: #FFFFFF;
+  --black-color: #010101;
+  --blue-color: #0030DB;
+  --red-color: #FF0000;
+  --gray-dark-color: #909090;
+  --gray-light-color: #e0e0e0;
+
+  /* Size */
+  --padding: 12px;
+  --avatar-size: 36px;
+
+  /* Font size */
+  --font-large: 18px;
+  --font-medium: 14px;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  /* padding이나 margin을 주었을 때, 박스를 포함하여 사이즈가 지정되도록 */
+  box-sizing: border-box;
+}
+
 
 /*HEADER*/
 header{
   display: flex;
   justify-content: space-between;
   align-items:center;
-  height: auto;
   padding: 8px 12px;
-  font-size:24px;
-  background-color:black;
-  color:white;
+  font-size: var(--font-large);
+  background-color: var(--black-color);
+  color: var(--white-color);
 
 }
 .logo i{
-  color:red;
+  color: var(--red-color);
 }
 .logo a{
   text-decoration: none;
-  color:white;
+  color: var(--white-color);
 }
 .icon{
   list-style:none;
-  padding-left:0;
 }
 .icon li{
   display: inline;
 }
 .icon button{
-  border:0;
-  color:white;
-  background-color:black;
-  font-size: 24px;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  font-size: var(--font-large);
 }
 
 
@@ -45,9 +64,8 @@ header{
 }
 .hashtags{
   list-style:none;
-  padding-left: 0;
-  color: darkblue;
-  font-size: 20px;
+  color: var(--blue-color);
+  font-size: var(--font-medium);
 }
 .hashtags li{
   display:inline;
@@ -59,11 +77,10 @@ header{
 .titleAndButton button{
   padding-top:8px;
   border:0;
-  background-color:white;
+  background-color: var(--white-color);
 }
 .actions{
   display: flex;
-  padding-left:0;
   list-style:none;
   text-align:center;
 }
@@ -74,13 +91,13 @@ header{
 }
 .actions button{
   border:0;
-  background-color:white;
-  font-size:20px;
+  background-color: var(--white-color);
+  font-size: var(--font-large);
 }
 .actions span{
   display: block;
   padding-top:8px;
-  font-size: 15px;
+  font-size: var(--font-medium);
 }
 .channel{
   display: flex;
@@ -103,9 +120,9 @@ header{
 }
 .channel button{
   border: 0;
-  background-color:white;
-  color:red;
-  font-size: 25px;
+  background-color: var(--white-color);
+  color: var(--red-color);
+  font-size: var(--font-large);
 }
 
 
@@ -115,7 +132,6 @@ header{
 }
 .playlist{
   list-style: none;
-  padding-left: 0;
 }
 .items a{
   display: flex;
@@ -132,8 +148,8 @@ header{
 }
 .items button{
   border: 0;
-  background-color: white;
-  font-size: 25px;
+  background-color: var(--white-color);
+  font-size: var(--font-large);
 }
 
 /*metadata 공통 속성 */
@@ -145,11 +161,11 @@ header{
 .subscribers,
 .views,
 .name{
-  color: darkgray;
-  font-size: 20px;
+  color: var(--gray-dark-color);
+  font-size: var(--font-medium);
 }
 /*title 공통 속성*/
 .title{
-    font-size:25px;
+    font-size: var(--font-large);
     line-height: 40px;
 }
