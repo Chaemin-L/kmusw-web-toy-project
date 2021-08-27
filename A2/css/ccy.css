@@ -110,7 +110,31 @@ header{
 
 
 /* NEXT VIDEO */
-
+.UpNext {
+  padding: 0px 30px;
+}
+.playlist{
+  list-style: none;
+  padding-left: 0;
+}
+.items a{
+  display: flex;
+  text-decoration: none;
+}
+.items a img{
+  margin-right: 20px;
+}
+.items {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.items button{
+  border: 0;
+  background-color: white;
+  font-size: 25px;
+}
 
 /*metadata 공통 속성 */
 .metadata{
@@ -119,13 +143,12 @@ header{
 }
 /*subscribers, views 공통 속성*/
 .subscribers,
-.views{
+.views,
+.name{
   color: darkgray;
   font-size: 20px;
-  line-height: 40px;
 }
-/*name, title 공통 속성*/
-.name,
+/*title 공통 속성*/
 .title{
     font-size:25px;
     line-height: 40px;
