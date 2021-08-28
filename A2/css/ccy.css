@@ -29,26 +29,26 @@ header{
   display: flex;
   justify-content: space-between;
   align-items:center;
-  padding: 8px 12px;
+  padding: var(--padding);
   font-size: var(--font-large);
   background-color: var(--black-color);
   color: var(--white-color);
 
 }
-.logo i{
+header .logo i{
   color: var(--red-color);
 }
-.logo a{
+header .logo a{
   text-decoration: none;
   color: var(--white-color);
 }
-.icon{
+header .icon{
   list-style:none;
 }
-.icon li{
+header .icon li{
   display: inline;
 }
-.icon button{
+header .icon button{
   color: var(--white-color);
   background-color: var(--black-color);
   font-size: var(--font-large);
@@ -60,22 +60,22 @@ header{
 
 /*INFORMATION*/
 .info{
-  padding: 0px 30px;
+  padding: var(--padding);
 }
-.hashtags{
+.info .metadata .hashtags{
   list-style:none;
   color: var(--blue-color);
   font-size: var(--font-medium);
 }
-.hashtags li{
+.info .metadata .hashtags li{
   display:inline;
 }
-.titleAndButton{
+.info .metadata .titleAndButton{
   display: flex;
   align-items:flex-start;
 }
-.titleAndButton button{
-  padding-top:8px;
+.info .metadata .titleAndButton button{
+  padding: var(--padding);
   border:0;
   background-color: var(--white-color);
 }
@@ -96,7 +96,7 @@ header{
 }
 .actions span{
   display: block;
-  padding-top:8px;
+  padding: var(--padding);
   font-size: var(--font-medium);
 }
 .channel{
@@ -104,16 +104,16 @@ header{
   justify-content: space-between;
   border-style:solid;
   border-width: 1px 0px;
-  padding: 15px 12px;
+  padding: var(--padding);
 }
-.profile{
-  padding: 8px 0px;
+.channel .profile{
+  padding: var(--padding);
 }
-.profile a{
+.channel .profile a{
   text-decoration: none;
   display: flex;
 }
-.profile a img{
+.channel .profile a img{
   width:70px;
   height: 70px;
   margin-right: 30px;
@@ -128,25 +128,25 @@ header{
 
 /* NEXT VIDEO */
 .UpNext {
-  padding: 0px 30px;
+  padding: var(--padding);
 }
 .playlist{
   list-style: none;
 }
-.items a{
+.playlist .items a{
   display: flex;
   text-decoration: none;
 }
-.items a img{
+.playlist .items a img{
   margin-right: 20px;
 }
-.items {
+.playlist .items {
   margin: 20px 0px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.items button{
+.playlist .items button{
   border: 0;
   background-color: var(--white-color);
   font-size: var(--font-large);
