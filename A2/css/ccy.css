@@ -23,6 +23,12 @@
   box-sizing: border-box;
 }
 
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline:none;
+}
 
 /*HEADER*/
 header{
@@ -86,7 +92,6 @@ header .icon button{
 }
 .info .metadata .titleAndButton button{
   padding: var(--padding);
-  border:0;
   background-color: var(--white-color);
 }
 .actions{
@@ -100,7 +105,6 @@ header .icon button{
   margin: 10px 20px;
 }
 .actions button{
-  border:0;
   background-color: var(--white-color);
   font-size: var(--font-large);
 }
@@ -128,7 +132,6 @@ header .icon button{
   margin-right: 30px;
 }
 .channel button{
-  border: 0;
   background-color: var(--white-color);
   color: var(--red-color);
   font-size: var(--font-large);
@@ -156,7 +159,6 @@ header .icon button{
   align-items: flex-start;
 }
 .playlist .items button{
-  border: 0;
   background-color: var(--white-color);
   font-size: var(--font-large);
 }
