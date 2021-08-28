@@ -102,9 +102,8 @@ header .icon button{
 .channel{
   display: flex;
   justify-content: space-between;
-  border-style:solid;
-  border-width: 1px 0px;
-  padding: var(--padding);
+  border-top: 1px solid var(--gray-light-color);
+  border-bottom: 1px solid var(--gray-light-color);
 }
 .channel .profile{
   padding: var(--padding);
