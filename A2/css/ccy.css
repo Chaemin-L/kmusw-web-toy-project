@@ -90,6 +90,16 @@ header .icon button{
   display: flex;
   align-items:flex-start;
 }
+.info .metadata .titleAndButton .title{
+  /*
+    문단을 제한하여 나타낼 수 있음
+    google에 CSS line clamp 검색하여 이용
+  */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
 .info .metadata .titleAndButton button{
   padding: var(--padding);
   background-color: var(--white-color);
