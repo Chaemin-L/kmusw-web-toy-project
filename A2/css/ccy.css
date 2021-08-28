@@ -57,6 +57,8 @@ header .icon button{
 
 /*VIDEO*/
 .player{
+  position: sticky;
+  top: 0;
   text-align: center;
   background-color: var(--black-color);
 }
