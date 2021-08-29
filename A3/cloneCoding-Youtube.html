@@ -1,0 +1,147 @@
+<!--
+반응형 유튜브 사이트 따라 만들기
+참고 : 유튜브 드림코딩- by 엘리 https://youtu.be/X91jsJyZofw
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Clone Coding - Youtube</title>
+    <script src="https://kit.fontawesome.com/27aaa5eb05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/ccy.css">
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <a href="#"><i class="fab fa-youtube"></i>
+        Youtube
+        </a>
+      </div>
+      <ul class="icon">
+        <li><button class="search"><i class="fas fa-search"></i></button></li>
+        <li><button class = "moreBtn"><i class="fas fa-ellipsis-h"></i></button></li>
+      </ul>
+    </header>
+
+
+    <!-- VIDEO -->
+    <section class="player">
+      <video controls src="play_SnakeGame.mp4">
+      </video>
+    </section>
+
+
+
+    <div class="infoAndUpNext">
+      <!-- INFORMATION -->
+      <section class= "info">
+        <!-- Metadata -->
+        <div class="metadata">
+          <!-- hashtags -->
+          <ul class="hashtags">
+            <li>#CloneCoding</li>
+            <li>#Youtube</li>
+          </ul>
+          <!-- title -->
+          <div class="titleAndButton">
+            <div class="title">영상 제목이 들어갈 곳입니다. 영상 제목은 길수도 있으니 블라블라 써두도록 하겠습니다. 어쩌구저쩌구어쩌구저쩌구 어쩌구저쩌구어쩌구저쩌구 어쩌구저쩌구어쩌구저쩌구 어쩌구저쩌구어쩌구저쩌구
+            </div>
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <!-- details -->
+          <div class="views">
+            조회수 7.6만회 · 1일 전
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <ul class="actions">
+          <li>
+            <button class="likeBtn"><i class="active far fa-thumbs-up"></i>
+              <span>1000</span>
+            </button>
+          </li>
+          <li><button class="hateBtn"><i class="far fa-thumbs-down"></i>
+              <span>32</span>
+            </button>
+          </li>
+          <li><button class="shareBtn"><i class="fas fa-share"></i>
+              <span>공유</span>
+            </button>
+          </li>
+          <li><button class="saveBtn"><i class="fas fa-plus"></i>
+              <span>저장</span>
+            </button>
+          </li>
+          <li><button class="reportBtn"><i class="fas fa-flag"></i>
+              <span>보고</span>
+            </button>
+          </li>
+        </ul>
+
+        <!-- Channel -->
+        <div class="channel">
+          <div class="profile">
+            <a href="#">
+            <img src="avatar.png" alt="프로필 사진">
+            <div class="metadata">
+              <span class="title"> 채널명 </span>
+              <span class="subscribers"> 구독자수 </span>
+            </div>
+            </a>
+          </div>
+          <button class="subscribeBtn"> 구독 </button>
+        </div>
+      </section>
+
+
+      <!-- NEXT VIDEO -->
+      <section class= "UpNext">
+        <span class= "title"> 다음 동영상 </span>
+        <ul class="playlist">
+          <li>
+            <div class="items">
+              <a href="#">
+              <div class="img"><img src="richi.jpg" alt = "강아지 사진"></div>
+              <div class=metadata>
+                <span class="title"> 영상 제목1 </span>
+                <span class="name"> 채널명1 </span>
+                <span class="views"> 구독자수2 </span>
+              </div></a>
+              <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+          </li>
+          <li>
+            <div class="items">
+              <a href="#">
+              <div class="img"><img src="richi.jpg" alt = "강아지 사진"></div>
+              <div class=metadata>
+                <span class="title"> 영상 제목2 </span>
+                <span class="name"> 채널명2 </span>
+                <span class="views"> 구독자수2 </span>
+              </div></a>
+              <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+          </li>
+          <li>
+            <div class="items">
+              <a href="#">
+              <div class="img"><img src="richi.jpg" alt = "강아지 사진"></div>
+              <div class=metadata>
+                <span class="title"> 영상 제목3 </span>
+                <span class="name"> 채널명3 </span>
+                <span class="views"> 구독자수3 </span>
+              </div></a>
+              <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

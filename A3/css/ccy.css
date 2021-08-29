@@ -171,7 +171,7 @@ header .icon button{
 .playlist .items a .img{
   margin-right: 20px;
   /* 1만큼 늘어나고 1만큼 줄어들고 너비의 35%를 차지함.*/
-  flex: 1 1 35%;  
+  flex: 1 1 35%;
 }
 .playlist .items .img img {
   width: 100%;
@@ -184,6 +184,26 @@ header .icon button{
   flex: 1 1 5%;
   background-color: var(--white-color);
   font-size: var(--font-large);
+}
+
+.infoAndUpNext{
+  display: flex;
+  flex-direction: column;
+}
+
+/*  창의 너비가 넓어지면 영상 하단의 두 섹션이
+    가로로 배치되도록 */
+@media screen and (min-width: 800px){
+  .infoAndUpNext{
+    flex-direction: row;
+    margin: var(--padding) 0;
+  }
+  .info{
+    flex: 1 1 65%;
+  }
+  .UpNext{
+    flex: 1 1 35%;
+  }
 }
 
 
