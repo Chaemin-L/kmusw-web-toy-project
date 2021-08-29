@@ -90,7 +90,8 @@ header .icon button{
   display: flex;
   align-items:flex-start;
 }
-.info .metadata .titleAndButton .title{
+/* 버튼 클릭시 clamp 생성, 문단 펼침*/
+.info .metadata .titleAndButton .title.clamp{
   /*
     문단을 제한하여 나타낼 수 있음
     google에 CSS line clamp 검색하여 이용
