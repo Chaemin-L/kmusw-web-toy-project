@@ -150,6 +150,9 @@ header .icon button{
   color: var(--red-color);
   font-size: var(--font-large);
 }
+.channel button.active{
+  color: var(--gray-dark-color);
+}
 
 
 /* NEXT VIDEO */

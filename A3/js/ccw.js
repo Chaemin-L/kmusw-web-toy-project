@@ -16,3 +16,13 @@ likeBtn.addEventListener('click', () =>{
 hateBtn.addEventListener('click', () =>{
   hateBtn.classList.toggle('active');
 });
+
+/* 마찬가지 비슷한 맥락으로 구독 버튼 클릭시 텍스트 변경*/
+const subscribeBtn = document.querySelector('.subscribeBtn');
+
+subscribeBtn.addEventListener("click", () => {
+    if(subscribeBtn.innerText === '구독') {
+        subscribeBtn.innerText = '구독중';
+    } else subscribeBtn.innerText ='구독';
+    subscribeBtn.classList.toggle('active');
+});
