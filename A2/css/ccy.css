@@ -158,23 +158,34 @@ header .icon button{
 .playlist{
   list-style: none;
 }
-.playlist .items a{
-  display: flex;
-  text-decoration: none;
-}
-.playlist .items a img{
-  margin-right: 20px;
-}
 .playlist .items {
   margin: 20px 0px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
+.playlist .items a{
+  display: flex;
+  text-decoration: none;
+}
+.playlist .items a .img{
+  margin-right: 20px;
+  /* 1만큼 늘어나고 1만큼 줄어들고 너비의 35%를 차지함.*/
+  flex: 1 1 35%;  
+}
+.playlist .items .img img {
+  width: 100%;
+}
+.playlist .items .metadata{
+  flex: 1 1 60%;
+}
 .playlist .items button{
+  height: 100%;
+  flex: 1 1 5%;
   background-color: var(--white-color);
   font-size: var(--font-large);
 }
+
 
 /*metadata 공통 속성 */
 .metadata{
