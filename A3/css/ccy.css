@@ -119,7 +119,7 @@ header .icon button{
   background-color: var(--white-color);
   font-size: var(--font-large);
 }
-.actions button i.active{
+.actions button.active{
   color: var(--blue-color);
 }
 .actions span{
