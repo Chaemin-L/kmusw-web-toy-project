@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/django,pycharm,python
-# Edit at https://www.toptal.com/developers/gitignore?templates=django,pycharm,python
+# Created by https://www.toptal.com/developers/gitignore/api/pycharm,windows,python,django
+# Edit at https://www.toptal.com/developers/gitignore?templates=pycharm,windows,python,django
 
 ### Django ###
 *.log
@@ -320,4 +320,30 @@ fabric.properties
 
 # Cython debug symbols
 
-# End of https://www.toptal.com/developers/gitignore/api/django,pycharm,python
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/pycharm,windows,python,django
