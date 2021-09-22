@@ -3,7 +3,7 @@ from django.utils import timezone
 from .models import Question
 from .forms import QuestionForm, AnswerForm
 from django.core.paginator import Paginator
-
+from django.contrib.auth.decorators import login_required
 
 def index(request):
     """
@@ -41,6 +41,7 @@ def answer_create(request, question_id):
     question.answer_set.create(content=request.POST.get('content'), create_date=timezone.now())
     return redirect('pybo:detail', question_id=question.id)
 
+@login_required(login_url='common:login')
 def question_create(request):
     """
     pybo 질문 등록
@@ -58,6 +59,7 @@ def question_create(request):
     context = {'form': form}
     return render(request, 'pybo/question_form.html', context)
 
+@login_required(login_url='common:login')
 def answer_create(request, question_id):
     """
     pybo 답변 등록
