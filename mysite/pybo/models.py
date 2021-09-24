@@ -14,12 +14,13 @@ class Question(models.Model):
         return self.subject
 
 class Answer(models.Model):
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='author_answer')
     #ForeignKey는 기존 모델을 속성으로 연결
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     content = models.TextField()
     create_date = models.DateTimeField()
     modify_date = models.DateTimeField(null=True, blank=True)
+    voter = models.ManyToManyField(User, related_name='voter_answer')
 
 class Comment(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
