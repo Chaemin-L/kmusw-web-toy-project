@@ -6,13 +6,6 @@ from django.utils import timezone
 from ..forms import AnswerForm
 from ..models import Question, Answer
 
-def answer_create(request, question_id):
-    """
-    pybo 답변 등록
-    """
-    question = get_object_or_404(Question, pk=question_id)
-    question.answer_set.create(content=request.POST.get('content'), create_date=timezone.now())
-    return redirect('pybo:detail', question_id=question.id)
 
 @login_required(login_url='common:login')
 def answer_create(request, question_id):
@@ -28,7 +21,8 @@ def answer_create(request, question_id):
             answer.create_date = timezone.now()
             answer.question = question
             answer.save()
-            return redirect('{}#answer_{}'.format(resolve_url('pybo:detail', question_id=question.id), answer.id))
+            return redirect('{}#answer_{}'.format(
+                resolve_url('pybo:detail', question_id=question.id), answer.id))
     else:
         form = AnswerForm()
     context = {'question': question, 'form': form}
